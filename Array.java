@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -66,24 +62,16 @@ public class Array{
             System.out.printf("id = %d not existed.\n", id);
         }
     }
- 
-    /**
-     * sort student by name
-     */
+
     public void XepTen() {
         Collections.sort(hoaList, new XepTen());
     }
  
-    /**
-     * sort student by id
-     */
+   
     public void HoaTBByGPA() {
         Collections.sort(hoaList, new HoaTBByGPA());
     }
  
-    /**
-     * show list student to screen
-     */
     public void show() {
         for (HoaTuoi hoatuoi : hoaList) {
             System.out.format("%5d|  ", hoatuoi.getId());
@@ -95,11 +83,7 @@ public class Array{
         }
     }
  
-    /**
-     * input student id
-     * 
-     * @return student id
-     */
+  
     public int inputId() {
         System.out.print("Số id Hoa : ");
         while (true) {
@@ -112,11 +96,7 @@ public class Array{
         }
     }
      
-    /**
-     * input student name
-     * 
-     * @return student name
-     */
+ 
     private String inputtenhoa() {
         System.out.print("Input name: ");
         return sc.nextLine();
@@ -130,17 +110,7 @@ public class Array{
         System.out.print("Input name: ");
         return sc.nextLine();
     }
-    /**
-     * input student address
-     * 
-     * @return student address
-    
- 
-    /**
-     * input student age
-     * 
-     * @return student age
-     */
+   
      private float inputGianhap() {
         System.out.print("Input gia nhap: ");
         while (true) {
@@ -169,13 +139,7 @@ public class Array{
             }
         }
     }
-    /**
-     * input student gpa
-     * 
-     * @return gpa
-     */
  
-    // getter && setter
     public List<HoaTuoi> getHoaTuoiList() {
         return hoaList;
     }
