@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author HOANG PHUC
- */
  
 import java.io.File;
 import java.io.FileInputStream;
@@ -21,19 +12,10 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
  
-/**
- * StudentDao class
- * 
- * @author viettuts.vn
- */
+
 public class HoaTuoiDoc {
     private static final String HOATUOI_FILE_NAME = "HoaTuoi.txt";
- 
-    /**
-     * save list student to file
-     * 
-     * @param list student to save
-     */
+
     public void write(List<HoaTuoi> hoaList) {
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
@@ -51,11 +33,7 @@ public class HoaTuoiDoc {
         }
     }
  
-    /**
-     * read list student from file
-     * 
-     * @return list student
-     */
+
     public List<HoaTuoi> read() {
         List<HoaTuoi> hoaList = new ArrayList<>();
         FileInputStream fis = null;
@@ -77,11 +55,6 @@ public class HoaTuoiDoc {
         return hoaList;
     }
  
-    /**
-     * close input stream
-     * 
-     * @param is: input stream
-     */
     private void closeStream(InputStream is) {
         if (is != null) {
             try {
@@ -92,11 +65,7 @@ public class HoaTuoiDoc {
         }
     }
  
-    /**
-     * close output stream
-     * 
-     * @param os: output stream
-     */
+   
     private void closeStream(OutputStream os) {
         if (os != null) {
             try {
